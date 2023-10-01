@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500;700&family=Courgette&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer>
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal')
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 120;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('aktivan');
+                }
+                else {
+                    reveals[i].classList.remove('aktivan');
+                }
+            }
+        }
+    </script>
+    <script src="js/nav.js"></script>
+    <style>
+        header {
+            background-image: linear-gradient(60deg, rgba(0, 0, 0, 0.8) 60%, rgba(59, 59, 59, 0.8), rgba(137, 121, 113, 0.8)), url("assets/slike/attributes/firstpage/credits_bg_1280.jpg");
+            background-position: left 50% top 25%;
+        }
+
+        @media all and (max-width: 500px) {
+            h1 {
+                font-size: 24px;
+            }
+            p{
+                font-size: 13px;
+            }
+            footer{
+                width: 80%;
+            }
+        }
+
+        @media all and (min-width: 600px) and (max-width: 800px){
+            h1 {
+                font-size: 32px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    </style>
+    <title>Credits</title>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <div class="logoih">
+                    <img class="logo" src="assets/images/castle.png">
+                    <p class="h">Medieval Castles</p>
+                </div>
+                <div class="links">
+                    <a href="index.html" class="link">Home</a>
+                    <a href="about.html" class="link">Content</a>
+                    <a href="videos.html" class="link">Videos</a>
+                    <a id="curr" class="link">Credits</a>
+                    <a href="info.html" class="link">Info</a>
+                </div>
+            </nav>
+            <label class="hamburger-menu">
+                <input type="checkbox">
+            </label>
+            <aside class="sidebar">
+                <div class="links">
+                    <a href="index.html" class="link">Home</a>
+                    <a href="about.html" class="link">Content</a>
+                    <a href="videos.html" class="link">Videos</a>
+                    <a id="curr" class="link">Credits</a>
+                    <a href="info.html" class="link">Info</a>
+                </div>
+            </aside>
+        </div>
+
+        <main>
+            <div id="t">
+                <h1>Right here you can find sources of all images and icons used</h1>
+
+                <p>We believe in the power of creativity and collaboration. That's why we've used free images and
+                    icons in our project.
+                    <br> <br>
+                    We understand the effort and skill that goes into producing original content, and we have
+                    respect for anyone who sells their work online. Every piece of art, photography, and design is a
+                    manifestation of someone's passion and dedication. While we do use free resources, we are
+                    committed to giving credit where it's due.
+                </p>
+            </div>
+        </main>
+    </header>
+
+    <footer>
+        <h1>Icons</h1>
+        <p>Original color of icons were changed</p>
+        <p>Hover over images in content section to see <em>source</em> link in the bottom right corner</p>
+        <div class="credit">
+            <div id="sct">
+                <div class="icon_credited">
+                    <img src="assets/images/castle.png">
+                </div>
+                <a target="_blank"
+                    href="https://www.flaticon.com/free-icon/castle_90406?term=castle&page=1&position=5&origin=search&related_id=90406"
+                    class="source">Fortress icons created by Freepik - Flaticon</a>
+            </div>
+
+            <div id="sct">
+                <div class="icon_credited">
+                    <img src="assets/images/point.png">
+                </div>
+                <a target="_blank"
+                    href="https://www.flaticon.com/free-icon/point_556232?term=finger+point&page=1&position=1&origin=search&related_id=556232">Hand
+                    icons created by Freepik - Flaticon</a>
+            </div>
+
+            <div id="sct">
+                <div class="icon_credited">
+                    <img src="assets/images/quote.png">
+                </div>
+                <a target="_blank"
+                    href="https://www.flaticon.com/free-icon/right_11042702?term=quote&page=1&position=7&origin=tag&related_id=11042702"
+                    title="quote icons">Quote icons created by Xinh Studio - Flaticon</a>
+            </div>
+
+            <div id="sct">
+                <div class="icon_credited">
+                    <img src="assets/images/pen.png">
+                </div>
+                <a target="_blank"
+                    href="https://www.flaticon.com/free-icon/pen_1250925?term=pen&page=1&position=2&origin=search&related_id=1250925"
+                    title="pen icons">Pen icons created by Icongeek26 - Flaticon</a>
+            </div>
+        </div>
+
+        <h1>Images</h1>
+        <div class="credit">
+            <div id="sct">
+                <img class="image_credited1" src="bg_1280.jpg">
+                <a target="_blank"
+                    href="https://pixabay.com/photos/noble-castle-hofburg-imperial-palace-789501/">Source</a>
+            </div>
+        </div>
+
+        <div class="credit">
+            <div id="sct">
+                <img class="image_credited1" src="assets/slike/attributes/firstpage/vid_bg_1280.jpg">
+                <a target="_blank"
+                    href="https://pixabay.com/photos/castle-architecture-palace-loire-4406410/">Source</a>
+            </div>
+        </div>
+
+        <div class="credit">
+            <div id="sct">
+                <img class="image_credited1" src="assets/slike/attributes/firstpage/credits_bg_1280.jpg">
+                <a target="_blank"
+                    href="https://pixabay.com/photos/cesar-tower-medieval-castle-3584313/">Source</a>
+            </div>
+        </div>
+
+        <div class="credit">
+            <div id="sct">
+                <img class="image_credited1" src="assets/slike/attributes/firstpage/info_bg_1280.jpg">
+                <a target="_blank"
+                    href="https://pixabay.com/photos/landscape-castle-lake-darling-7970076/">Source</a>
+            </div>
+        </div>
+
+        <div class="credit">
+            <div id="sct">
+                <img class="image_credited1" src="assets/slike/attributes/abt_bg.jpg">
+                <a target="_blank"
+                    href="https://pixabay.com/photos/castle-towers-building-fortress-5693094/">Source</a>
+            </div>
+        </div>
+
+        <div class="credit">
+            <div id="sct">
+                <img class="image_credited1" src="assets/slike/attributes/hist_bg.jpg">
+                <a target="_blank"
+                    href="https://pixabay.com/photos/castle-ruins-fortress-fort-195105/">Source</a>
+            </div>
+        </div>
+
+        <div class="credit">
+            <div id="sct">
+                <img class="image_credited1" src="assets/slike/attributes/str_bg.jpg">
+                <a target="_blank"
+                    href="https://pixabay.com/photos/ancient-arch-architecture-building-1869298/">Source</a>
+            </div>
+        </div>
+
+        <div class="credit">
+            <div id="sct">
+                <img class="image_credited1" src="assets/slike/attributes/gp_bg.jpg">
+                <a target="_blank"
+                    href="https://pixabay.com/photos/castle-monument-park-building-6566978/">Source</a>
+            </div>
+        </div>
+
+        <div class="credit">
+            <div id="sct">
+                <img class="image_credited1" src="assets/slike/attributes/exp_bg.jpg">
+                <a target="_blank"
+                    href="https://pixabay.com/photos/castle-neuschwanstein-bavaria-5116436/">Source</a>
+            </div>
+        </div>
+
+        <div class="credit">
+            <div id="sct">
+                <img class="image_credited1" src="assets/slike/attributes/firstpage/Castelul_Bran2.jpg">
+                <a target="_blank"
+                    href="https://en.wikipedia.org/wiki/Bran_Castle#/media/File:Castelul_Bran2.jpg">Source</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

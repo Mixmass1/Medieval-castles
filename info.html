@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500;700&family=Courgette&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/current.js" defer></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/nav.js"></script>
+    <title>Examples</title>
+</head>
+
+<style>
+    header {
+        background-image: linear-gradient(60deg, rgba(0, 0, 0, 0.8) 60%, rgba(59, 59, 59, 0.8), rgba(137, 121, 113, 0.8)), url("assets/slike/attributes/firstpage/info_bg_1280.jpg");
+        background-position: left 50% top 25%;
+    }
+
+    @media all and (max-width: 600px) {
+        .reveal {
+            width: 90%;
+        }
+    }
+
+    @media all and (min-width: 601px) and (max-width: 680px){
+        .reveal {
+            width: 85%;
+        }
+    }
+
+    @media all and (min-width: 680px) and (max-width: 768px) {
+        .reveal {
+            width: 80%;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <div class="logoih">
+                    <img class="logo" src="assets/images/castle.png">
+                    <p class="h">Medieval Castles</p>
+                </div>
+                <div class="links">
+                    <a href="index.html" class="link">Home</a>
+                    <a href="about.html" class="link">Content</a>
+                    <a href="videos.html" class="link">Videos</a>
+                    <a href="credits.html" class="link">Credits</a>
+                    <a id="curr" class="link">Info</a>
+                </div>
+            </nav>
+            <label class="hamburger-menu">
+                <input type="checkbox">
+            </label>
+            <aside class="sidebar">
+                <div class="links">
+                    <a href="index.html" class="link">Home</a>
+                    <a href="about.html" class="link">Content</a>
+                    <a href="videos.html" class="link">Videos</a>
+                    <a href="credits.html" class="link">Credits</a>
+                    <a id="curr" class="link">Info</a>
+                </div>
+            </aside>
+        </div>
+
+        <main>
+            <div id="t">
+                <h1>Everything about the website</h1>
+
+                <p>Welcome to our website, created by a history enthusiast with a passion for programming. What began as
+                    a personal project to practise programming skills has evolved into a website commited to providing
+                    valuable information to other curious people.
+                </p>
+            </div>
+        </main>
+    </header>
+
+    <section class="reveal">
+        <footer>
+            <h2>Why was the site even created?</h2>
+            <p>The website was created to combine history and programming skills, offering valuable information to all
+                visitors. It addresses the common challenge of finding necessary information for projects, providing a
+                practical solution. The website simplifies things by offering a complete resource that combines
+                historical
+                insights with programming knowledge. Its goal is to help people improve their projects without the need
+                for
+                time-consuming research, so they can concentrate on being creative and making progress.</p>
+            <h2>Will there be new content?</h2>
+            <p>Yes! Site will be updated soon with more content such as <a href="videos.html">videos</a>, more pictures
+                and
+                most importantly more needed information. Videos will be short form edited content just like on tiktok.
+                They
+                will cover various themes featured here.</p>
+            <h2>Can you use information from this site freely?</h2>
+            <p>Of course! Everyone can use it without worry. That's why it was made in the first place. Also
+                contributing is
+                not necessary, but it would be kind if you do :)</p>
+        </footer>
+    </section>

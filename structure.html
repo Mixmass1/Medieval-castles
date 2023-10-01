@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500;700&family=Courgette&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/current.js" defer></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/open.js"></script>
+    <script src="js/nav.js"></script>
+    <title>Structure</title>
+</head>
+
+<style>
+    header {
+        background-image: linear-gradient(60deg, rgba(0, 0, 0, 0.8) 60%, rgba(59, 59, 59, 0.8), rgba(137, 121, 113, 0.8)), url("assets/slike/attributes/str_bg.jpg");
+    }
+
+    #grid #slika3 {
+        margin-left: 40px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <div class="logoih">
+                    <img class="logo" src="assets/images/castle.png">
+                    <p class="h">Medieval Castles</p>
+                </div>
+
+                <div class="links">
+                    <a href="index.html" class="link">Home</a>
+                    <div class="dropdown" data-dropdown>
+                        <button class="vid">
+                            <a id="curr" class="link" data-dropdown-button>Content</a>
+                            <img class="arrow" src="assets/images/down-arrow.png">
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="about.html">About</a>
+                            <a href="history.html">History</a>
+                            <a href="structure.html">Structure</a>
+                            <a href="gp.html">Gunpowder Era</a>
+                            <a href="exp.html">Examples</a>
+                            <a href="me.html">Modern Era</a>
+                        </div>
+                    </div>
+
+                    <a href="videos.html" class="link">Videos</a>
+                    <a href="credits.html" class="link">Credits</a>
+                    <a href="info.html" class="link">Info</a>
+                </div>
+            </nav>
+
+            <label class="hamburger-menu">
+                <input type="checkbox">
+            </label>
+            <aside class="sidebar">
+                <div class="links">
+                    <a href="index.html" class="link">Home</a>
+                    <div class="dropdown" data-dropdown>
+                        <button class="vid" onclick="toggle()">
+                            <a id="curr" class="link" data-dropdown-button>Content</a>
+                            <img class="arrow" src="assets/images/down-arrow.png">
+                        </button>
+                        <div id="meni" class="hamb-dropdown-menu">
+                            <a class="link" href="about.html">About</a>
+                            <a class="link" href="history.html">History</a>
+                            <a class="link" href="structure.html">Structure</a>
+                            <a class="link" href="gp.html">Gunpowder Era</a>
+                            <a class="link" href="exp.html">Examples</a>
+                            <a class="link" href="me.html">Modern Era</a>
+                        </div>
+                    </div>
+
+                    <div class="class">
+                        <a href="videos.html" class="link">Videos</a>
+                        <a href="credits.html" class="link">Credits</a>
+                        <a href="info.html" class="link">Info</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="heading">
+            <h1>Structure</h1>
+        </div>
+    </header>
+
+    <main>
+        <p>One of the most striking features of castles is their strategic precision, ingeniously designed to withstand
+            sieges and repel invaders. The imposing walls, watchtowers, and moats were ingeniously crafted to provide
+            formidable defenses, making them virtually impenetrable. The architectural ingenuity displayed in the
+            construction of these fortresses continues to inspire awe and admiration.
+            <br>
+        <div class="quote">
+            <div class="qt">
+                <img src="assets/images/quote.png">
+            </div>
+            <p>"Castles are not simply walls and turrets; they are guardians of dreams and aspirations."</p>
+        </div>
+        <br>
+        Their structure is very complex. To defend against enemy armies, castles had to upgrade their defense and adapt
+        to new technologies and military tactics, so many features of a castle were added later and were not present in
+        early versions.
+        </p>
+        <div class="reveal">
+            <div class="redni">
+                <h3>The typical features of a medieval castle were:</h3>
+                <div class="nabrajanje">
+                    <div id="flex">
+                        <div class="broj">1.</div>
+                        <div class="tekst">
+                            <strong>Curtain Walls & Towers</strong> - the perimeter defensive wall
+                        </div>
+                    </div>
+                    <div id="flex">
+                        <div class="broj">2.</div>
+                        <div class="tekst">
+                            <strong>Barbican</strong> - a fortification to protect a gate
+                        </div>
+                    </div>
+                    <div id="flex">
+                        <div class="broj">3.</div>
+                        <div class="tekst">
+                            <strong>Moat</strong> - a perimeter ditch with or without water
+                        </div>
+                    </div>
+                    <div id="flex">
+                        <div class="broj">4.</div>
+                        <div class="tekst">
+                            <strong>Fortified Gatehouse</strong>- the main castle entrance
+                        </div>
+                    </div>
+                    <div id="flex">
+                        <div class="broj">5.</div>
+                        <div class="tekst">
+                            <strong>Bailey or Inner Ward (courtyard)</strong> - the area within a curtain wall.
+                        </div>
+                    </div>
+                    <div id="flex">
+                        <div class="broj">6.</div>
+                        <div class="tekst">
+                            <p>
+                                <strong>Keep (aka Donjon)</strong>
+                                - the largest tower and best stronghold of
+                                the castle
+                        </div>
+                    </div>
+                </div>
+
+                <h3>1. Curtain Walls & Towers:</h3>
+                <div class="image">
+                    <img class="slika2" src="assets/slike/Lincoln_Castle_curtain_walls.jpeg">
+                    <div class="source">
+                        <a target="_blank"
+                            href="https://upload.wikimedia.org/wikipedia/commons/8/84/Lincoln_Castle_curtain_wall_%283%29.JPG">Source</a>
+                    </div>
+                </div>
+
+
+                <div class="image_desc">
+                    <div class="desc">
+                        <div>
+                            <img class="icon" src="assets/images/point.png">
+                        </div>
+                        <div>
+                            <p>Walls on <em>Lincoln castle</em>, located in England</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="funfact">
+                    <div class="fftop">
+                        <img src="assets/images/pen.png">
+                    </div>
+                    <p class="ffhead">Medieval Bathrooms</p>
+                    <p>Castles had unique <em>bathrooms</em> known as <strong>garderobes</strong>. These were
+                        essentially protruding stone structures built outside the main walls, and waste would drop down
+                        into a pit. It was a simple form of waste disposal.</p>
+                </div>
+                <br>
+                <p>Curtain walls surrounded the entire castle grounds. They stood as the first line of defense against
+                    invaders, protecting the castle's inhabitants. They were usually around 2-3 meters thick and some
+                    even
+                    included small passageways. The curtain wall featured many additional defensive features such as:
+                </p>
+                <br>
+                <div class="reveal">
+                    <div id="flex">
+                        <div class="broj">I</div>
+                        <div class="tekst">
+                            <strong>Arrow slits </strong> were ingenious defensive openings in castle walls,
+                            providing
+                            archers with a strategic advantage during conflicts. Originally constructed as
+                            vertical
+                            openings, later cross-shaped designs were added, offering more versatile angles to
+                            target
+                            enemies and protection from enemy fire. These cleverly engineered slits were
+                            effective
+                            until
+                            the advent of firearms,
+                            demonstrating the resourcefulness of ancient military ingenuity in castle defense.
+                            Even
+                            though their practical use diminished over time, arrow slits remain a testament to
+                            the
+                            fascinating history of architectural innovation in the face of adversity.
+                        </div>
+                    </div>
+                    <br>
+                    <div id="flex">
+                        <div class="broj">II</div>
+                        <div class="tekst">
+                            <strong>Battlements</strong>, with their crenellated design, were iconic features of
+                            medieval
+                            castles. They provided protection and hiding spots for defenders during battles, and
+                            their
+                            elevated position served as lookout points. The sight of battlements also acted as a
+                            deterrent
+                            to potential attackers. Although their practical use diminished over time, their legacy
+                            remains
+                            a symbol of medieval defensive ingenuity and chivalry.
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img class="slika2" src="assets/slike/battlements_chinese_wall.jpeg">
+                        <div class="source">
+                            <a target="_blank"
+                                href="https://en.wikipedia.org/wiki/Battlement#/media/File:Badalingchangcheng.JPG">Source</a>
+                        </div>
+                    </div>
+
+                    <div class="image_desc">
+                        <div class="desc">
+                            <div>
+                                <img class="icon" src="assets/images/point.png">
+                            </div>
+                            <div>
+                                <p><em>Battlements</em> on the Great Wall of China.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal">
+                    <div id="flex">
+                        <div class="broj">III</div>
+                        <div class="tekst">
+                            <strong>Towers</strong> were used so defenders could resist from higher ground. In the
+                            beginning, they were square-shaped. The problem with them was their weak corners which
+                            is
+                            why
+                            they evolved to a circle shape later. Also, towers offered more space for living
+                            quarters
+                            and
+                            storage rooms.
+                        </div>
+                    </div>
+                    <br>
+                    <div id="flex">
+                        <div class="broj">IV</div>
+                        <div class="tekst">
+                            During a siege, <strong>hoardings</strong> might be built out on walls. They were made
+                            of
+                            wood
+                            and were used to throw boiling liquids, primarily water, on attackers. First introduced
+                            by
+                            Crusaders, they became rapidly popular in Europe.
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img class="slika2" src="assets/slike/hoardings.jpg">
+                        <div class="source">
+                            <a target="_blank"
+                                href="https://commons.wikimedia.org/wiki/File:Caerphilly_Castle_hoarding_exterior.jpg">Source</a>
+                        </div>
+                    </div>
+                    <div class="image_desc">
+                        <div class="desc">
+                            <div>
+                                <img class="icon" src="assets/images/point.png">
+                            </div>
+                            <div>
+                                <p><em>Hoardings</em></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="funfact">
+                        <div class="fftop">
+                            <img src="assets/images/pen.png">
+                        </div>
+                        <p class="ffhead">Castles were colorful</p>
+                        <p>While many people associate castles with gray stone, they were
+                            often <em>quite colorful</em> in medieval times. The exterior surfaces were often
+                            covered with a
+                            layer of plaster, which could be painted in vibrant colors. This was not just for
+                            aesthetics but also a way to display the wealth and prestige of the castle's owner.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="reveal">
+                <p>Later another layer of walls was added and a <em>castle in a castle</em> was born. Attackers now had
+                    to
+                    capture both walls to enter inside. Two walls could be connected by underground tunnels, also called
+                    <em>dungeons</em>.
+                </p>
+
+                <div class="redni">
+                    <h3>2. Fortified Gatehouse:</h3>
+                    <p>The main gate of a castle was on the first line of defense and for this reason needed to be
+                        strong to
+                        protect the castle. They were surrounded by two towers on both sides. There were usually two
+                        gates
+                        that
+                        could be closed by portcullises (metal grid which could be lowered to block passage). If enemies
+                        were
+                        stuck between two gates, they would’ve been killed through murder holes, holes in walls made so
+                        that
+                        defenders can shoot arrows through them. They were connected to land by a drawbridge, which
+                        could be
+                        raised to additionally protect the main gate.</p>
+                    <div class="image">
+                        <img class="slika2" src="assets/slike/attributes/fenestrelle-s-fort-entry-italy.jpg">
+                        <div class="source">
+                            <a target="_blank"
+                                href="https://www.freepik.com/free-photo/fenestrelle-s-fort-entry-italy_9183883.htm#query=castle%20door&position=11&from_view=keyword&track=ais">Image
+                                by wirestock - on Freepik</a>
+                        </div>
+                    </div>
+
+                    <div class="image_desc">
+                        <div class="desc">
+                            <div>
+                                <img class="icon" src="assets/images/point.png">
+                            </div>
+                            <div>
+                                <p><em>A gate at the entrance to a castle in Italy.</em></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>3. Barbican</h3>
+                    <p>The Barbican is a structure similar to the main gate and was usually used to protect the
+                        drawbridge.
+                        Features existing in the gatehouse were also present here.</p>
+
+                    <div class="reveal">
+                        <h3>4. Moat:</h3>
+                        <p>A canal that was dug to surround the castle and could be filled with water. The moat was a
+                            huge
+                            problem
+                            for the enemy, it was around 1 meter deep, enough to disable cavalry from crossing, also
+                            usually
+                            slippy
+                            and, could provide fish and water sources for people inside the castle</p>
+                        <div class="image">
+                            <img class="slika2" src="assets/slike/attributes/moat.jpg">
+                            <div class="source">
+                                <a target="_blank"
+                                    href="https://www.freepik.com/free-photo/aerial-shot-magnificent-old-castle-middle-lake-surrounded-by-trees-farms_12947526.htm#query=castle%20moat&position=5&from_view=keyword&track=ais">Image
+                                    by wirestock - on Freepik</a>
+                            </div>
+                        </div>
+
+                        <div class="image_desc">
+                            <div class="desc">
+                                <div>
+                                    <img class="icon" src="assets/images/point.png">
+                                </div>
+                                <div>
+                                    <p><em>Moat</em> surrounding Bodiam castle in England.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>5. The Bailey</h3>
+                        <p>Space within the curtain wall, the Bailey was like a functioning city during sieges. It
+                            contained
+                            many
+                            buildings like living quarters, stables, stores, workshops, kitchens and halls.</p>
+                    </div>
+
+                    <div class="reveal">
+                        <h3>6. The Keep (Donjon):</h3>
+                        <p>It was usually the tallest building and certainly the most important. The Keep housed great
+                            halls,
+                            bedrooms, storage rooms, offices, and other important rooms. It was born in Normandy,
+                            northern
+                            France,
+                            where local lords ignored the popular motte and bailey castles built in England. They were
+                            normally
+                            2-4
+                            floors high and squared-shaped. Entranced was on higher ground connected with stairs to the
+                            ground
+                            which
+                            could be removed in case of attack. Inside there was normally a great hall, used for meals
+                            and
+                            amusement, a chapel, used mainly for prayers, private apartments, and storage rooms.</p>
+
+                        <div class="image">
+                            <img class="slika2" src="assets/slike/keep.jpg">
+                            <div class="source">
+                                <a target="_blank"
+                                    href="https://commons.wikimedia.org/wiki/File:De_donjon_van_Pons,_Frankrijk_2014.jpg">Source</a>
+                            </div>
+                        </div>
+
+                        <div class="image_desc">
+                            <div class="desc">
+                                <div>
+                                    <img class="icon" src="assets/images/point.png">
+                                </div>
+                                <div>
+                                    <p><em>Keep</em></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="funfact">
+                            <div class="fftop">
+                                <img src="assets/images/pen.png">
+                            </div>
+                            <p class="ffhead">Chimneys Were a Luxury</p>
+                            <p>Early castles lacked the chimneys we're familiar with today. The fire was built in the
+                                middle of a room, and the smoke found its way out through a hole in the roof or simply
+                                filled the space. Chimneys, as we know them now, were introduced in the later medieval
+                                period and were considered a luxury.
+                            </p>
+                        </div>
+                        <h3>7. The Dungeons:</h3>
+                        <p>Lurking beneath the castle, the dungeons were dark and foreboding chambers designed to
+                            imprison
+                            captives
+                            or enemies. Often damp and inhospitable, these grim spaces were a stark reminder of the
+                            castle's
+                            authority and the consequences of defying its might.</p>
+                        <div class="image">
+                            <img class="slika2" src="assets/slike/attributes/stables-dungeon-abandoned-castle.jpg">
+                            <div class="source">
+                                <a target="_blank"
+                                    href="https://www.freepik.com/free-photo/stables-dungeon-abandoned-castle_1329635.htm">Image
+                                    by bearfotos - on Freepik</a>
+                            </div>
+                        </div>
+
+                        <div class="image_desc">
+                            <div class="desc">
+                                <div>
+                                    <img class="icon" src="assets/images/point.png">
+                                </div>
+                                <div>
+                                    <p><em>Dungeons under abandoned castle.</em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

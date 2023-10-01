@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500;700&family=Courgette&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/current.js" defer></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/open.js"></script>
+    <script src="js/nav.js"></script>
+    <title>Examples</title>
+</head>
+
+<style>
+    header {
+        background-image: linear-gradient(60deg, rgba(0, 0, 0, 0.8) 60%, rgba(59, 59, 59, 0.8), rgba(137, 121, 113, 0.8)), url("assets/slike/attributes/exp_bg.jpg");
+        background-position: left 50% top 25%;
+    }
+
+    .jaxd {
+        left: 0;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <div class="logoih">
+                    <img class="logo" src="assets/images/castle.png">
+                    <p class="h">Medieval Castles</p>
+                </div>
+
+                <div class="links">
+                    <a href="index.html" class="link">Home</a>
+                    <div class="dropdown" data-dropdown>
+                        <button class="vid">
+                            <a id="curr" class="link" data-dropdown-button>Content</a>
+                            <img class="arrow" src="assets/images/down-arrow.png">
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="about.html">About</a>
+                            <a href="history.html">History</a>
+                            <a href="structure.html">Structure</a>
+                            <a href="gp.html">Gunpowder Era</a>
+                            <a href="exp.html">Examples</a>
+                            <a href="me.html">Modern Era</a>
+                        </div>
+                    </div>
+
+                    <a href="videos.html" class="link">Videos</a>
+                    <a href="credits.html" class="link">Credits</a>
+                    <a href="info.html" class="link">Info</a>
+                </div>
+            </nav>
+
+            <label class="hamburger-menu">
+                <input type="checkbox">
+            </label>
+            <aside class="sidebar">
+                <div class="links">
+                    <a href="index.html" class="link">Home</a>
+                    <div class="dropdown" data-dropdown>
+                        <button class="vid" onclick="toggle()">
+                            <a id="curr" class="link" data-dropdown-button>Content</a>
+                            <img class="arrow" src="assets/images/down-arrow.png">
+                        </button>
+                        <div id="meni" class="hamb-dropdown-menu">
+                            <a class="link" href="about.html">About</a>
+                            <a class="link" href="history.html">History</a>
+                            <a class="link" href="structure.html">Structure</a>
+                            <a class="link" href="gp.html">Gunpowder Era</a>
+                            <a class="link" href="exp.html">Examples</a>
+                            <a class="link" href="me.html">Modern Era</a>
+                        </div>
+                    </div>
+
+                    <div class="class">
+                        <a href="videos.html" class="link">Videos</a>
+                        <a href="credits.html" class="link">Credits</a>
+                        <a href="info.html" class="link">Info</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="heading">
+            <h1>Examples</h1>
+        </div>
+    </header>
+
+    <main>
+        <h2>Introduction</h2>
+        <p>Today, these magnificent structures serve as living museums, drawing tourists and history enthusiasts alike
+            to explore their rich heritage. Tourists can step back in time and immerse themselves in the stories of
+            chivalry, courtly love, and medieval life that these castles hold within their walls. Here are some of the
+            most eminent:</p>
+        <div class="reveal">
+            <h2>Malbork Castle</h2>
+            <p>
+                <em>
+                    Location: Malbork, Poland<br>
+                    Constructed: 13th Century
+                </em>
+            </p>
+            <br>
+            <p><strong>Malbork Castle</strong>, which holds the distinction of being the castle, in the world based on
+                its
+                area is a magnificent marvel constructed by Teutonic knights in northern Poland around the 13th century.
+                Its
+                grand red brick Gothic architecture, walls and strategic positioning rendered it an impenetrable
+                fortress
+                that served as the command of the Teutonic Order. Today, recognized as a UNESCO World Heritage Site it
+                stands as a captivating landmark that preserves the heritage of these knights while offering visitors a
+                fascinating glimpse, into Polands medieval history.</p>
+            <div class="image">
+                <img class="slika1" src="assets/slike/Malbork.jpg">
+                <div class="source">
+                    <a target="_blank"
+                        href="https://commons.wikimedia.org/wiki/File:Panorama_of_Malbork_Castle,_part_4.jpg">Source</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <h2>Château de Doué-la-Fontaine</h2>
+            <p>
+                <em>
+                    Location: Normandy, France<br>
+                    Constructed: 9th Century
+                </em>
+            </p>
+            <br>
+            <p>
+                <strong>The Château de Doué-la-Fontaine</strong>, located in Normandy, northern France, is the world's
+                oldest known castle.
+                Built by Normans, it follows the motte and bailey design. Despite enduring destruction, much of the
+                fortress
+                has survived, offering visitors a glimpse into its medieval past and the legacy of the Normans. Today,
+                it
+                stands as a living history book, preserving the rich heritage of the region.
+            </p>
+            <div class="image">
+                <img class="slika1" src="assets/slike/first_castle.jpeg">
+                <div class="source">
+                    <a target="_blank"
+                        href="https://commons.wikimedia.org/wiki/File:W0436-DoueLaFontaine_MoteCarolingienne_63340.JPG">Source</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <h2>Neuschwanstein Castle</h2>
+            <p>
+                <em>
+                    Location: Schwangau, Germany<br>
+                    Constructed: 19th Century
+                </em>
+            </p>
+            <br>
+            <p><strong>Neuschwanstein Castle</strong>, located in the region of Bavaria, Germany is an enchanting
+                fortress
+                that has become one of the most popular tourist destinations worldwide. King Ludwig II commissioned this
+                castle in the century. Its architecture combines elements of medieval Romanesque and Gothic styles
+                creating
+                a fairy tale like atmosphere. The castles stunning setting amidst the Bavarian Alps surrounded by
+                forests
+                and serene lakes adds to its charm. Although King Ludwig II passed away before its completion visitors
+                are
+                still captivated by the halls and majestic chambers, within Neuschwanstein Castle. It stands as a symbol
+                of
+                Germanys cultural heritage while also serving as an inspiring representation of romanticism and
+                imagination.
+            </p>
+            <div class="image">
+                <img class="slika1" src="assets/slike/attributes/neuschwanstein.jpg">
+                <div class="source">
+                    <a target="_blank"
+                        href="https://www.freepik.com/free-photo/neuschwanstein_13153513.htm#query=neuschwanstein%20castle&position=0&from_view=keyword&track=ais">Image
+                        by wirestock - on Freepik</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <h2>Mont Saint Michel Castle</h2>
+            <p>
+                <em>
+                    Location: Normandy, France<br>
+                    Constructed: 9th Century
+                </em>
+            </p>
+            <br>
+            <p><strong>Saint Michel Castle</strong> , located on an island, is renowned for its unique tidal phenomenon.
+                During the day, the water recedes, creating a causeway that connects it to the mainland. As the tides
+                rise
+                again, it becomes an island, making for a captivating sight. The castle's history, dating back to the
+                medieval era, adds to its allure, and its blend of architectural styles showcases its significance.
+                Today,
+                as a UNESCO World Heritage Site, Mont Saint Michel continues to enchant visitors from around the world,
+                leaving an indelible impression with its splendor and timeless beauty.</p>
+            <div class="image">
+                <img class="slika1" src="assets/slike/attributes/mont-saint-michel.jpg">
+                <div class="source">
+                    <a target="_blank"
+                        href="https://www.freepik.com/free-photo/mont-saint-michel-with-blue-sky-france_10585692.htm#query=saint%20michel%20castle&position=0&from_view=search&track=ais">Image
+                        by vwalakte - on Freepik</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <h2>Edinburgh Castle</h2>
+            <p>
+                <em>
+                    Location: Edinburgh, Scotland<br>
+                    Constructed: 12th Century
+                </em>
+            </p>
+            <br>
+            <p><strong>Edinburgh Castle</strong>, perched on Castle Rock, has a rich history as a royal residence and
+                military base. After the Union with Great Britain, it remained a military stronghold. Today, it's a
+                cherished tourist attraction, offering visitors a glimpse into Scotland's past and captivating them with
+                its
+                majestic charm.</p>
+            <div class="image">
+                <img class="slika1" src="assets/slike/attributes/edinburgh-castle-scotland.jpg">
+                <div class="source">
+                    <a target="_blank"
+                        href="https://www.freepik.com/free-photo/beautiful-view-edinburgh-castle-castle-rock-scotland_19782898.htm#query=edinburgh&position=4&from_view=keyword&track=sph">Image
+                        by DejaVu Designs - on Freepik</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <h2>Eltz Castle</h2>
+            <p>
+                <em>
+                    Location: Wirschem, Germany<br>
+                    Constructed: 12th Century
+                </em>
+            </p>
+            <br>
+            <p><strong>Burg Eltz</strong>, built by the Eltz family near Koblenz, Germany, is a famous medieval castle.
+                Its
+                picturesque location and rich history attract tourists from around the world. With a blend of
+                architectural
+                styles, it stands as a symbol of Germany's cultural heritage and resilience. A visit to this UNESCO
+                World
+                Heritage Site offers an unforgettable journey through time, immersing visitors in the grandeur of the
+                past.
+            </p>
+            <div class="image">
+                <img class="slika1" src="assets/slike/Eltz.jpg">
+                <div class="source">
+                    <a target="_blank"
+                        href="https://commons.wikimedia.org/wiki/File:Wierschem,_Burg_Eltz,_2012-08_CN-01.jpg">Source</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <h2>Prague Castle</h2>
+            <p>
+                <em>
+                    Location: Prague, Czechia<br>
+                    Constructed: 9th Century
+                </em>
+            </p>
+            <br>
+            <p>
+                Prague's colossal castle, one of the world's largest, stands by the Vltava River, connecting to the old
+                town
+                through the iconic Charles Bridge. Its rich history and mesmerizing architecture make it a must-visit
+                destination, capturing the hearts of travelers and history enthusiasts alike.</p>
+            <div class="image">
+                <img class="slika1" src="assets/slike/attributes/prague_castle.jpg">
+                <div class="source">
+                    <a target="_blank"
+                        href="https://www.freepik.com/free-photo/monuments-prague_1254743.htm#query=prague%20skyline&position=16&from_view=keyword&track=ais">Image
+                        by photoangel - on Freepik</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <h2>Windsor Castle</h2>
+            <p>
+                <em>
+                    Location: Winsdor, England<br>
+                    Constructed: 11th Century
+                </em>
+            </p>
+            <br>
+            <p>
+                <strong>Windsor Castle</strong>, steeped in British royalty and military history, was initially a
+                fortress
+                built by William
+                the Conqueror. It later became a cherished residence for the royal family and served as a strategic
+                military
+                base. Today, it stands as a popular tourist attraction, captivating visitors with its splendid
+                architecture
+                and storied past as one of the official residences of the British monarchy.
+            </p>
+            <div class="image">
+                <img class="slika1" src="assets/slike/winsdor_castle.jpg">
+                <div class="source">
+                    <a target="_blank"
+                        href="https://sh.wikipedia.org/wiki/Windsor_(zamak)#/media/Datoteka:Windsor_Castle_at_Sunset_-_Nov_2006.jpg">Source</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <h2>Hohenschwangau</h2>
+            <p>
+                <em>
+                    Location: Hohenschwangau, Germany<br>
+                    Constructed: 19th Century
+                </em>
+            </p>
+            <br>
+            <p>
+                Built on a 12th-century fortress by King Maximilian II, this castle stands proudly alongside Eltz and
+                Neuschwanstein as one of Germany's most famous landmarks. Located in southern Bavaria, it attracts
+                tourists
+                from around the world with its rich history and captivating architecture. A symbol of royal grandeur,
+                the
+                castle offers stunning panoramic views and meticulously designed gardens, creating an enchanting
+                experience
+                for visitors.</p>
+            <div class="image">
+                <img class="slika1" src="assets/slike/Hohenschwangau.jpg">
+                <div class="source">
+                    <a target="_blank"
+                        href="https://en.wikipedia.org/wiki/File:Schloss_Hohenschwangau_2021.jpg">Source</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <h2>Versaille</h2>
+            <p>
+                <em>
+                    Location: Versaille, France<br>
+                    Constructed: 17th Century
+                </em>
+            </p>
+            <br>
+            <p>Located near Paris it was a royal palace for the French royal family. It was the center of government and
+                justice in France. It’s famous for its gardens and breathtaking interior. In 1789 it was no longer home
+                to
+                the royal family and in the 19th it became a history museum. About 15 million tourists visit the castle
+                every year.</p>
+            <div class="image">
+                <img class="slika1" src="assets/slike/versaille.jpg">
+                <div class="source">
+                    <a target="_blank"
+                        href="https://commons.wikimedia.org/wiki/File:Facade_principale_du_ch%C3%A2teau_de_Versailles,_c%C3%B4t%C3%A9_jardins_-_DSC_0600.jpg">Source</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

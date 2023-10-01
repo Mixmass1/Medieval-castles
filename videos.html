@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500;700&family=Courgette&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer>
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal')
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 120;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('aktivan');
+                }
+                else {
+                    reveals[i].classList.remove('aktivan');
+                }
+            }
+        }
+    </script>
+    <script src="js/nav.js"></script>
+    <style>
+        header {
+            background-image: linear-gradient(60deg, rgba(0, 0, 0, 0.8) 60%, rgba(59, 59, 59, 0.8), rgba(137, 121, 113, 0.8)), url("assets/slike/attributes/firstpage/vid_bg_1280.jpg");
+        }
+    </style>
+    <title>Videos</title>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <div class="logoih">
+                    <img class="logo" src="assets/images/castle.png">
+                    <p class="h">Medieval Castles</p>
+                </div>
+                <div class="links">
+                    <a href="index.html" class="link">Home</a>
+                    <a href="about.html" class="link">Content</a>
+                    <a id="curr" class="link">Videos</a>
+                    <a href="credits.html" class="link">Credits</a>
+                    <a href="info.html" class="link">Info</a>
+                </div>
+            </nav>
+            <label class="hamburger-menu">
+                <input type="checkbox">
+            </label>
+            <aside class="sidebar">
+                <div class="links">
+                    <a href="index.html" class="link">Home</a>
+                    <a href="about.html" class="link">Content</a>
+                    <a id="curr" class="link">Videos</a>
+                    <a href="credits.html" class="link">Credits</a>
+                    <a href="info.html" class="link">Info</a>
+                </div>
+            </aside>
+        </div>
+
+        <main>
+            <div id="t">
+                <h1>Sorry, videos are not ready yet</h1>
+
+                <p>Unfortunately videos take a lot time to make, so we didn't have enough time to make them when the
+                    website was released. But very soon they will be uploaded here!
+                </p>
+            </div>
+        </main>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500;700&family=Courgette&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer>
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal')
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 120;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('aktivan');
+                }
+                else {
+                    reveals[i].classList.remove('aktivan');
+                }
+            }
+        }
+    </script>
+    <script src="js/open.js"></script>
+    <script src="js/nav.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <div class="logoih">
+                    <img class="logo" src="assets/images/castle.png">
+                    <p class="h">Medieval Castles</p>
+                </div>
+                <div class="links">
+                    <a id="curr" class="link">Home</a>
+                    <a href="about.html" class="link">Content</a>
+                    <a href="videos.html" class="link">Videos</a>
+                    <a href="credits.html" class="link">Credits</a>
+                    <a href="info.html" class="link">Info</a>
+                </div>
+            </nav>
+            <label class="hamburger-menu">
+                <input type="checkbox">
+            </label>
+            <aside class="sidebar">
+                <div class="links">
+                    <a id="curr" class="link">Home</a>
+                    <a href="about.html" class="link">Content</a>
+                    <a href="videos.html" class="link">Videos</a>
+                    <a href="credits.html" class="link">Credits</a>
+                    <a href="info.html" class="link">Info</a>
+                </div>
+            </aside>
+        </div>
+
+        <main>
+            <div id="t">
+                <h1>Explore medieval times <br> through castles</h1>
+
+                <p>Here you can find all information <br> needed for
+                    medieval castles. If <br> you are here for a
+                    project or personal <br> education, we are sure
+                    the information on <br> this site will help you.
+                </p>
+
+                <button>
+                    <a href="about.html">Learn more</a>
+                </button>
+            </div>
+        </main>
+    </header>
+
+    <footer class="reveal">
+        <h2>Content</h2>
+        <p>Learn everything about castles</p>
+
+        <div class="grid">
+            <div class="field">
+                <div class="frame">
+                    <div class="polje">
+                        <div class="layer">
+                            <div class="a1">
+                                <a href="about.html" class="desc">Learn the basics about these majestic buildings</a>
+                            </div>
+                        </div>
+                        <img src="assets/slike/attributes/firstpage/firstpage_abt.jpg">
+                    </div>
+                </div>
+                <h3>About</h3>
+            </div>
+
+            <div class="field">
+                <div class="frame">
+                    <div class="polje">
+                        <div class="layer">
+                            <div class="a1">
+                                <a href="history.html" class="desc">Explore the rich history of castles</a>
+                            </div>
+                        </div>
+                        <img src="assets/slike/attributes/firstpage/firstpage_ruins.jpg">
+                    </div>
+                </div>
+                <h3>History</h3>
+            </div>
+
+            <div class="field">
+                <div class="frame">
+                    <div class="polje">
+                        <div class="layer">
+                            <div class="a1">
+                                <a href="structure.html" class="desc">Find out about all the elements featured both
+                                    inside
+                                    and
+                                    outside</a>
+                            </div>
+                        </div>
+                        <img src="assets/slike/attributes/firstpage/firstpage_str.jpg">
+                    </div>
+                </div>
+                <h3>Structure</h3>
+            </div>
+
+            <div class="field">
+                <div class="frame">
+                    <div class="polje">
+                        <div class="layer">
+                            <div class="a1">
+                                <a href="gp.html" class="desc">Curious about what happened to them after middle ages?
+                                    Here
+                                    you
+                                    can find out </a>
+                            </div>
+                        </div>
+                        <img src="assets/slike/attributes/firstpage/firstpage_gp.jpg">
+                    </div>
+                </div>
+                <h3>Gunpowder Era</h3>
+            </div>
+
+            <div class="field">
+                <div class="frame">
+                    <div class="polje">
+                        <div class="layer">
+                            <div class="a1">
+                                <a href="exp.html" class="desc">Find the most famous castles here</a>
+                            </div>
+                        </div>
+                        <img src="assets/slike/attributes/firstpage/neuschw_firstpage.jpg">
+                    </div>
+                </div>
+                <h3>Examples</h3>
+            </div>
+
+            <div class="field">
+                <div class="frame">
+                    <div class="polje">
+                        <div class="layer">
+                            <div class="a1">
+                                <a href="me.html" class="desc">Here’s where are castles now and how are they
+                                    presented</a>
+                            </div>
+                        </div>
+                        <img src="assets/slike/attributes/firstpage/Castelul_Bran2.jpg">
+                    </div>
+                </div>
+                <h3>Modern Era</h3>
+            </div>
+    </footer>
+</body>
+
+</html>
